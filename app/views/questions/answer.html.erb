@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Stupid Coaching</h1>
+  <div class="d-flex flex-column gap-1 p-2 ps-4 message">
+    <p><%= @question %></p>
+    <p><em>-You</em></p>
+  </div>
+
+  <div class="d-flex flex-column gap-1 alert alert-warning p-2 ps-4 message rounded-0 border-0">
+    <p><strong><%= @answer %></strong></p>
+    <p><em>-Your coach</em></p>
+  </div>
+<%= link_to 'Ask another question', ask_path %>
+</div>
